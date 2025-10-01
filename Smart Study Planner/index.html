@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📘 Smart Study Planner</h1>
+    <button id="dark-toggle">🌙</button>
+  </header>
+
+  <main>
+    <!-- Task Input Form -->
+    <section id="task-form">
+      <h2>Add Study Task</h2>
+      <input type="text" id="task-title" placeholder="Task Title">
+      <input type="date" id="task-date">
+      <input type="time" id="task-time">
+      <button id="add-task">➕ Add Task</button>
+    </section>
+
+    <!-- Progress Bar -->
+    <section id="progress">
+      <h2>📊 Progress</h2>
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <p id="progress-text">0% Completed</p>
+    </section>
+
+    <!-- Task List -->
+    <section id="task-list">
+      <h2>My Study Goals</h2>
+      <ul id="tasks"></ul>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+      <h2>📅 Study Timeline</h2>
+      <div id="timeline-container"></div>
+    </section>
+
+        <!-- Smart Suggestions -->
+    <section id="smart-suggestions">
+      <h2>🤖 Smart Study Suggestions</h2>
+      <input type="number" id="free-time" placeholder="Available Time (minutes)">
+      <button id="suggest-plan">✨ Suggest Study Plan</button>
+      <div id="suggestions-output"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Smart Study Planner</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
